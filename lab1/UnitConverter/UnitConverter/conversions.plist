@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Length</key>
+	<array>
+		<dict>
+			<key>Text</key>
+			<string>in to cm</string>
+			<key>Value</key>
+			<real>2.54</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>in to m</string>
+			<key>Value</key>
+			<real>0.025</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>ft to m</string>
+			<key>Value</key>
+			<real>0.305</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>yd to m</string>
+			<key>Value</key>
+			<real>0.914</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>yd to km</string>
+			<key>Value</key>
+			<real>0.0009144</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>mi to km</string>
+			<key>Value</key>
+			<real>1.609</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>cm to in</string>
+			<key>Value</key>
+			<real>0.394</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>m to in</string>
+			<key>Value</key>
+			<integer>40</integer>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>m to ft</string>
+			<key>Value</key>
+			<real>3.281</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>m to yd</string>
+			<key>Value</key>
+			<real>1.094</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>km to yd</string>
+			<key>Value</key>
+			<real>1093.613</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>km to mi</string>
+			<key>Value</key>
+			<real>0.621</real>
+		</dict>
+	</array>
+	<key>Mass</key>
+	<array>
+		<dict>
+			<key>Text</key>
+			<string>oz to g</string>
+			<key>Value</key>
+			<real>28.35</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>lb to kg</string>
+			<key>Value</key>
+			<real>0.454</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>g to oz</string>
+			<key>Value</key>
+			<real>0.035</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>kg to lb</string>
+			<key>Value</key>
+			<real>2.205</real>
+		</dict>
+	</array>
+	<key>Volume</key>
+	<array>
+		<dict>
+			<key>Text</key>
+			<string>fl oz to ml</string>
+			<key>Value</key>
+			<real>29.574</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>gal to ltr</string>
+			<key>Value</key>
+			<real>3.785</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>ml to fl oz</string>
+			<key>Value</key>
+			<real>0.0338</real>
+		</dict>
+		<dict>
+			<key>Text</key>
+			<string>ltr to gal</string>
+			<key>Value</key>
+			<real>0.264</real>
+		</dict>
+	</array>
+</dict>
+</plist>
