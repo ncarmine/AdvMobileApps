@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy2" translatesAutoresizingMaskIntoConstraints="NO" id="8Hb-OX-tX1">
+                                <rect key="frame" x="0.0" y="390" width="375" height="277"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candy Store Inventory" textAlignment="center" lineBreakMode="clip" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fax-vB-gkQ">
+                                <rect key="frame" x="16" y="232" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9LJ-I8-g84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy1" translatesAutoresizingMaskIntoConstraints="NO" id="Rhx-cR-tF4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="e5S-mN-bde"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rhx-cR-tF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2YH-GD-u2U"/>
+                            <constraint firstItem="Rhx-cR-tF4" firstAttribute="centerX" secondItem="Fax-vB-gkQ" secondAttribute="centerX" id="59s-cL-A2K"/>
+                            <constraint firstItem="8Hb-OX-tX1" firstAttribute="top" secondItem="Fax-vB-gkQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Qwt-lc-4Jo"/>
+                            <constraint firstItem="8Hb-OX-tX1" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="RM8-Z9-UCh"/>
+                            <constraint firstItem="Rhx-cR-tF4" firstAttribute="trailing" secondItem="8Hb-OX-tX1" secondAttribute="trailing" id="WOh-E6-J05"/>
+                            <constraint firstItem="Rhx-cR-tF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="YIj-1k-2bQ"/>
+                            <constraint firstItem="Rhx-cR-tF4" firstAttribute="leading" secondItem="8Hb-OX-tX1" secondAttribute="leading" id="eAb-d1-hJj"/>
+                            <constraint firstAttribute="trailing" secondItem="Rhx-cR-tF4" secondAttribute="trailing" id="pRK-Og-dC5"/>
+                            <constraint firstItem="Fax-vB-gkQ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="212" id="tZ4-Pl-Frf"/>
+                            <constraint firstItem="Fax-vB-gkQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="wno-qS-d6I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="candy1" width="425" height="282"/>
+        <image name="candy2" width="2365" height="1745"/>
+    </resources>
+</document>

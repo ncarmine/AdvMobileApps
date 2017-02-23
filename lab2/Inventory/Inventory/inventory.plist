@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Taffy</key>
+	<dict>
+		<key>Cherry</key>
+		<integer>67</integer>
+		<key>Blueberry</key>
+		<integer>71</integer>
+		<key>Caramel</key>
+		<integer>52</integer>
+		<key>Chocolate</key>
+		<integer>56</integer>
+		<key>Maple</key>
+		<integer>28</integer>
+		<key>Pineapple</key>
+		<integer>86</integer>
+	</dict>
+	<key>Chocolate</key>
+	<dict>
+		<key>Malted Milk Balls</key>
+		<integer>32</integer>
+		<key>Toffee</key>
+		<integer>21</integer>
+		<key>Homemade Fudge</key>
+		<integer>16</integer>
+		<key>Chocolate-covered Pretzels</key>
+		<integer>22</integer>
+		<key>Peppermint Bark</key>
+		<integer>34</integer>
+		<key>Milk Chocolate Bar</key>
+		<integer>35</integer>
+	</dict>
+	<key>Gummy Candies</key>
+	<dict>
+		<key>Swedish Fish</key>
+		<integer>37</integer>
+		<key>Sour Patch Kids</key>
+		<integer>39</integer>
+		<key>Haribo Gummy Bears</key>
+		<integer>114</integer>
+		<key>Sour Worms</key>
+		<integer>82</integer>
+		<key>Peach Rings</key>
+		<integer>63</integer>
+		<key>Assorted Gummy Fruit</key>
+		<integer>41</integer>
+	</dict>
+	<key>Hard Candies</key>
+	<dict>
+		<key>Peppermint Sticks</key>
+		<integer>47</integer>
+		<key>Lollipops</key>
+		<integer>23</integer>
+		<key>Atomic Fireballs</key>
+		<integer>12</integer>
+		<key>Jolly Ranchers</key>
+		<integer>128</integer>
+		<key>Lemonheads</key>
+		<integer>17</integer>
+		<key>Werthers Original</key>
+		<integer>76</integer>
+	</dict>
+</dict>
+</plist>
