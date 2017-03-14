@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
+        <attribute name="catName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="favLists" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FavList" inverseName="categories" inverseEntity="FavList" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="FavList" representedClassName="FavList" syncable="YES" codeGenerationType="class">
+        <attribute name="favItem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="categories" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="favLists" inverseEntity="Categories" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-38" positionY="-123" width="128" height="90"/>
+        <element name="FavList" positionX="-36" positionY="18" width="128" height="105"/>
+    </elements>
+</model>
