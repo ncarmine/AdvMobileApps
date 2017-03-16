@@ -12,6 +12,7 @@ class ResortsTableViewController: UITableViewController {
     
     var resortsList = Resorts()
     let resortsFile = "skiruns.plist"
+    var searchController: UISearchController!
     
     func getDataFile(resourceName: String, type: String) -> String? {
         guard let pathString = Bundle.main.path(forResource: resourceName, ofType: type) else {
@@ -46,6 +47,17 @@ class ResortsTableViewController: UITableViewController {
         resortsList.resorts = Array(resortsList.resortsData.keys)
         
         NotificationCenter.default.addObserver(self, selector: #selector(UIApplicationDelegate.applicationWillResignActive(_:)), name: NSNotification.Name(rawValue: "UIApplicationWillResignActiveNotification"), object: UIApplication.shared)
+        
+        //Searching
+        let allItems = resortsList.resortsData.flatMap({$1})
+        let resultsController = SearchTableViewController()
+        resultsController.allWords = allItems
+        
+        searchController = UISearchController(searchResultsController: resultsController)
+        searchController.searchBar.placeholder = "Search Runs"
+        searchController.searchBar.sizeToFit()
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = resultsController
     }
     
     func applicationWillResignActive(_ notification: Notification) {
