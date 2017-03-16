@@ -16,6 +16,7 @@
 		632ED17C1E7AFF930094B2B7 /* Resorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632ED17B1E7AFF930094B2B7 /* Resorts.swift */; };
 		632ED17E1E7B02190094B2B7 /* RunsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632ED17D1E7B02190094B2B7 /* RunsTableViewController.swift */; };
 		632ED1801E7B0D280094B2B7 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632ED17F1E7B0D280094B2B7 /* SearchTableViewController.swift */; };
+		632ED1821E7B10A10094B2B7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632ED1811E7B10A10094B2B7 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		632ED17B1E7AFF930094B2B7 /* Resorts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resorts.swift; sourceTree = "<group>"; };
 		632ED17D1E7B02190094B2B7 /* RunsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunsTableViewController.swift; sourceTree = "<group>"; };
 		632ED17F1E7B0D280094B2B7 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		632ED1811E7B10A10094B2B7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				632ED1771E7AFD860094B2B7 /* ResortsTableViewController.swift */,
 				632ED17D1E7B02190094B2B7 /* RunsTableViewController.swift */,
 				632ED17F1E7B0D280094B2B7 /* SearchTableViewController.swift */,
+				632ED1811E7B10A10094B2B7 /* WebViewController.swift */,
 				632ED16C1E7AFD450094B2B7 /* Assets.xcassets */,
 				632ED16E1E7AFD450094B2B7 /* LaunchScreen.storyboard */,
 				632ED1711E7AFD450094B2B7 /* Info.plist */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632ED1781E7AFD860094B2B7 /* ResortsTableViewController.swift in Sources */,
+				632ED1821E7B10A10094B2B7 /* WebViewController.swift in Sources */,
 				632ED1661E7AFD450094B2B7 /* AppDelegate.swift in Sources */,
 				632ED1801E7B0D280094B2B7 /* SearchTableViewController.swift in Sources */,
 				632ED17C1E7AFF930094B2B7 /* Resorts.swift in Sources */,

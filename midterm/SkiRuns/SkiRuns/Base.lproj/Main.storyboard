@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseCell" textLabel="dFr-Qk-YB1" style="IBUITableViewCellStyleDefault" id="Bgm-Si-fAD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="reuseCell" textLabel="dFr-Qk-YB1" style="IBUITableViewCellStyleDefault" id="Bgm-Si-fAD">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bgm-Si-fAD" id="DgO-PN-UAM">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dFr-Qk-YB1">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="293" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -35,7 +35,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="jSl-NN-Dvz" kind="show" identifier="runsSegue" id="yc1-X0-6Sl"/>
+                                    <segue destination="jSl-NN-Dvz" kind="show" id="kB0-ZT-FfY"/>
+                                    <segue destination="OL5-Qz-LxG" kind="show" identifier="webSegue" trigger="accessoryAction" id="ibY-ja-HFu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -93,6 +94,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mut-Hv-b03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2034" y="165"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="nKN-Cu-sdt">
+            <objects>
+                <viewController id="OL5-Qz-LxG" customClass="WebViewController" customModule="SkiRuns" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2BP-Nf-CDG"/>
+                        <viewControllerLayoutGuide type="bottom" id="zo1-oz-g7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GIE-E2-zco">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hmm-Qx-J2K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OL5-Qz-LxG" id="0be-YN-BzP"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hmm-Qx-J2K" firstAttribute="top" secondItem="2BP-Nf-CDG" secondAttribute="bottom" id="GJD-1Q-547"/>
+                            <constraint firstItem="Hmm-Qx-J2K" firstAttribute="leading" secondItem="GIE-E2-zco" secondAttribute="leading" id="bcX-Tc-OCh"/>
+                            <constraint firstItem="Hmm-Qx-J2K" firstAttribute="bottom" secondItem="zo1-oz-g7a" secondAttribute="top" id="gI6-dz-tYa"/>
+                            <constraint firstAttribute="trailing" secondItem="Hmm-Qx-J2K" secondAttribute="trailing" id="p4S-0m-7QS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Hmm-Qx-J2K" id="Asi-S6-i5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ra2-ih-RfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032.8" y="902.69865067466276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qer-PC-k85">

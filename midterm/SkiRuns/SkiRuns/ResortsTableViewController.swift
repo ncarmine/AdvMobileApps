@@ -9,10 +9,12 @@
 import UIKit
 
 class ResortsTableViewController: UITableViewController {
-    
+
     var resortsList = Resorts()
     let resortsFile = "skiruns.plist"
     var searchController: UISearchController!
+
+    let webDict = ["Aspen": "https://www.aspensnowmass.com/", "Eldora": "https://www.eldora.com/", "Steamboat": "https://www.steamboat.com/", "Winter Park": "https://www.snow.com/"]
     
     func getDataFile(resourceName: String, type: String) -> String? {
         guard let pathString = Bundle.main.path(forResource: resourceName, ofType: type) else {
@@ -20,7 +22,7 @@ class ResortsTableViewController: UITableViewController {
         }
         return pathString
     }
-    
+
     func docFilePath(filename: String) -> String? {
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
         let dir = path[0] as NSString
@@ -29,10 +31,10 @@ class ResortsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let path: String?
         let filePath = docFilePath(filename: resortsFile)
-        
+
         if FileManager.default.fileExists(atPath: filePath!) {
             path = filePath
         } else {
@@ -45,25 +47,25 @@ class ResortsTableViewController: UITableViewController {
 
         resortsList.resortsData = NSDictionary(contentsOfFile: path!) as! [String : [String]]
         resortsList.resorts = Array(resortsList.resortsData.keys)
-        
+
         NotificationCenter.default.addObserver(self, selector: #selector(UIApplicationDelegate.applicationWillResignActive(_:)), name: NSNotification.Name(rawValue: "UIApplicationWillResignActiveNotification"), object: UIApplication.shared)
-        
+
         //Searching
         let allItems = resortsList.resortsData.flatMap({$1})
         let resultsController = SearchTableViewController()
         resultsController.allWords = allItems
-        
+
         searchController = UISearchController(searchResultsController: resultsController)
         searchController.searchBar.placeholder = "Search Runs"
         searchController.searchBar.sizeToFit()
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchResultsUpdater = resultsController
     }
-    
+
     func applicationWillResignActive(_ notification: Notification) {
         let filePath = docFilePath(filename: resortsFile)
         let data = NSMutableDictionary()
-        
+
         data.addEntries(from: resortsList.resortsData)
         data.write(toFile: filePath!, atomically: true)
     }
@@ -109,7 +111,7 @@ class ResortsTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -140,6 +142,13 @@ class ResortsTableViewController: UITableViewController {
             runsVC.title = resortsList.resorts[indexPath.row]
             runsVC.runsListDetail = resortsList
             runsVC.selectedRun = indexPath.row
+        } else if segue.identifier == "webSegue" {
+            let webVC = segue.destination as! WebViewController
+            let indexPath = tableView.indexPath(for: sender as! UITableViewCell)!
+            let chosenResort = resortsList.resorts[indexPath.row]
+            webVC.title = chosenResort
+            print(webDict[chosenResort])
+            webVC.resortURL = NSURL(string: webDict[chosenResort]! as String)
         }
     }
 
