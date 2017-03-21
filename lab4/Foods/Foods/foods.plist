@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Fruit</key>
+	<array>
+		<string>apples</string>
+		<string>blackberries</string>
+		<string>blueberries</string>
+		<string>cherries</string>
+		<string>figs</string>
+		<string>grapes</string>
+		<string>lemons</string>
+		<string>limes</string>
+		<string>nectarines</string>
+		<string>oranges</string>
+		<string>peaches</string>
+		<string>pears</string>
+		<string>plums</string>
+		<string>raspberries</string>
+		<string>strawberries</string>
+		<string>tomatoes</string>
+	</array>
+	<key>Vegetables</key>
+	<array>
+		<string>artichoke</string>
+		<string>asparagus</string>
+		<string>beets</string>
+		<string>bell peppers</string>
+		<string>broccoli</string>
+		<string>brussels sprouts</string>
+		<string>cabbage</string>
+		<string>carrots</string>
+		<string>cauliflower</string>
+		<string>cucumber</string>
+		<string>eggplant</string>
+		<string>leek</string>
+		<string>lettuce</string>
+		<string>potatoes</string>
+		<string>radish</string>
+		<string>tomatoes</string>
+	</array>
+	<key>Protein</key>
+	<array>
+		<string>beans</string>
+		<string>beef</string>
+		<string>bison</string>
+		<string>chicken</string>
+		<string>dairy</string>
+		<string>eggs</string>
+		<string>fish</string>
+		<string>nuts</string>
+		<string>pork</string>
+		<string>shrimp</string>
+		<string>turkey</string>
+		<string>what&apos;s even in this stuff?</string>
+	</array>
+</dict>
+</plist>
