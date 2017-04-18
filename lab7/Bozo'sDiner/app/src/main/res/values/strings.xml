@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bozo\'s Diner</string>
+    <string name="menu">Menu</string>
+    <string-array name="menu_times">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+    <string name="item_description">Item Description</string>
+    <string name="contact_info">Contact</string>
+    <string name="contact_detail">1234 Main St\nSomewhere, USA\n(123) 456&#8211;7890</string>
+    <string name="hours_info">Hours</string>
+    <string name="hours_detail">Mon&#8211;Sun: 7am&#8211;3pm, 4pm&#8211;8pm\nBreakfast: 7am&#8211;11am\nLunch: 11am&#8211;3pm\nDinner: 4pm&#8211;8pm</string>
+</resources>
