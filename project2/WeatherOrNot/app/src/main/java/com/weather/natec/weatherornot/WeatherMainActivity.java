@@ -35,6 +35,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Objects;
 
+// Weather icon images provided by DeviantArt user "LavAna"
+// http://lavana.deviantart.com/art/Flat-Weather-Icons-32021664
+
 public class WeatherMainActivity extends Activity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
     private GoogleApiClient mGoogleApiClient;
@@ -64,6 +67,8 @@ public class WeatherMainActivity extends Activity implements GoogleApiClient.Con
         todayTemp = (TextView) findViewById(R.id.today_temp);
         weekGrid = (GridView) findViewById(R.id.weekGrid);
         thatContext = this;
+        ImageView darkskyImage = (ImageView) findViewById(R.id.darksky);
+        darkskyImage.setImageDrawable(getDrawable(R.drawable.darksky));
 
         //Create instance of GoogleAPIClient
         if (mGoogleApiClient == null) {
@@ -152,7 +157,6 @@ public class WeatherMainActivity extends Activity implements GoogleApiClient.Con
 
         protected String doInBackground(String... args) {
             try {
-                
                 URL url = new URL("https://api.darksky.net/forecast/251044d8d01971a3d739a13ddd102c08/"+currLat+","+currLong);
 
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
@@ -234,7 +238,6 @@ public class WeatherMainActivity extends Activity implements GoogleApiClient.Con
                 response = "NULL EXCEPTION ERROR";
             }
 
-            //Log.i("INFO", response);
             try {
                 JSONObject report = (JSONObject) new JSONTokener(response).nextValue();
                 JSONObject currentWeather = report.getJSONObject("currently");
