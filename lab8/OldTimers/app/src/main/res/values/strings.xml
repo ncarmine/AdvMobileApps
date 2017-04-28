@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Old Timers</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="reset">Reset</string>
+
+    <string name="add">Add Timer</string>
+    <string name="name">Timer Name</string>
+    <string name="time">Time in seconds</string>
+</resources>
