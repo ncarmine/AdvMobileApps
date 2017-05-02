@@ -4,4 +4,6 @@
         <item>Indoors</item>
         <item>Outdoors</item>
     </string-array>
+    <string name="add">Add Activity</string>
+    <string name="singup">Sign Up</string>
 </resources>
