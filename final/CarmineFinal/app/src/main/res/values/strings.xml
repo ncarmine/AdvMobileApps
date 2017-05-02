@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Carmine Final</string>
+    <string-array name="mainList">
+        <item>Indoors</item>
+        <item>Outdoors</item>
+    </string-array>
+</resources>
