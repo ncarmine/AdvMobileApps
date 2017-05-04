@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "138692197245",
+    "firebase_url": "https://medialist-5cadd.firebaseio.com",
+    "project_id": "medialist-5cadd",
+    "storage_bucket": "medialist-5cadd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138692197245:android:e1535b634108379f",
+        "android_client_info": {
+          "package_name": "com.list.MediaList"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138692197245-0rv48padb4eqp4m02rno0mcp3m5qggkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjXBM8RbesiEGkQoTD4ztI3QGXaF3bXrA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138692197245:android:b323c72b61912727",
+        "android_client_info": {
+          "package_name": "com.list.natec.medialist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138692197245-8mo6g0cokp85ppkqbhpj5tjevmiu56i7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.list.natec.medialist",
+            "certificate_hash": "f83baf72d701a6073a36fe1306535d799ced5954"
+          }
+        },
+        {
+          "client_id": "138692197245-0rv48padb4eqp4m02rno0mcp3m5qggkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjXBM8RbesiEGkQoTD4ztI3QGXaF3bXrA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138692197245-9b0e4tu154a5nbtm0vbodlvoiupehgd7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ncarmine.MediaList"
+              }
+            },
+            {
+              "client_id": "138692197245-0rv48padb4eqp4m02rno0mcp3m5qggkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
